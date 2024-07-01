@@ -88,6 +88,9 @@ class ExternalBackend:
             set_parameter(item, "htcondor_accounting_group")
             set_parameter(item, "slurm_partition")
             set_parameter(item, "slurm_time")
+            set_parameter(item, "c4p_cpu_cores")
+            set_parameter(item, "c4p_memory_limit")
+            set_parameter(item, "c4p_additional_requirements")
 
         if "kerberos" not in parameters:
             parameters["kerberos"] = WORKFLOW_KERBEROS
