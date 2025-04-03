@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # This file is part of REANA.
-# Copyright (C) 2017, 2018, 2019, 2020, 2021, 2022, 2023 CERN.
+# Copyright (C) 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2025 CERN.
 #
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -66,7 +66,7 @@ install_requires = [
     "packtivity==0.14.24",
     "yadage==0.20.1",
     "yadage-schemas==0.10.6",
-    "reana-commons[yadage]>=0.9.9,<0.10.0",
+    "reana-commons[yadage]>=0.9.11,<0.10.0",
     "requests>=2.25.1",
     "rfc3987==1.3.8",  # FIXME remove once yadage-schemas solves yadage deps.
 ]

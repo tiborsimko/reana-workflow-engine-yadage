@@ -1,5 +1,5 @@
 # This file is part of REANA.
-# Copyright (C) 2021 CERN.
+# Copyright (C) 2021, 2025 CERN.
 #
 # REANA is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
@@ -20,6 +20,9 @@ class TestExternalBackend:
                     {"compute_backend": "kubernetes"},
                     {"not_exists": "value"},
                     {"kubernetes_job_timeout": 20},
+                    {"kubernetes_cpu_request": None},
+                    {"kubernetes_cpu_limit": None},
+                    {"kubernetes_memory_request": None},
                     {"kubernetes_memory_limit": None},
                 ],
                 {
