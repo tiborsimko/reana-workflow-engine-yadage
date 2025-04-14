@@ -37,8 +37,8 @@ extras_require = {
     # Using older jq on amd64 due to https://github.com/reanahub/reana-demo-bsm-search/issues/21
     "jq": [
         "jq==0.1.7; platform_machine == 'x86_64'",
-        "jq==1.4.1; platform_machine == 'aarch4'",
-        "jq==1.4.1; platform_machine == 'arm64'",
+        "jq==1.2.2; platform_machine == 'aarch4'",
+        "jq==1.2.2; platform_machine == 'arm64'",
     ],
     "pygraphviz": [
         "pygraphviz>=1.5",
