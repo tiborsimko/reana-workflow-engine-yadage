@@ -56,7 +56,6 @@ COPY . /code
 
 # Are we debugging?
 ARG DEBUG=0
-RUN if [ "${DEBUG}" -gt 0 ]; then pip install --no-cache-dir -e ".[debug]"; else pip install --no-cache-dir .; fi;
 
 # Are we building with locally-checked-out shared modules?
 # hadolint ignore=DL3013
@@ -67,6 +66,9 @@ RUN if test -e modules/reana-commons; then \
         pip install --no-cache-dir "modules/reana-commons[yadage]" --upgrade; \
       fi \
     fi
+
+# Install the main package
+RUN if [ "${DEBUG}" -gt 0 ]; then pip install --no-cache-dir -e ".[debug]"; else pip install --no-cache-dir .; fi;
 
 # Check for any broken Python dependencies
 RUN pip check

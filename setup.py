@@ -54,10 +54,10 @@ install_requires = [
     # Pinning adage/packtivity/yadage/yadage-schemas to make sure we use compatible versions.
     # See https://github.com/reanahub/reana-workflow-engine-yadage/pull/236#discussion_r992475484
     "adage==0.11.0",
-    "packtivity==0.16.2",
-    "yadage==0.20.1",
-    "yadage-schemas==0.10.6",
-    "reana-commons[yadage]>=0.95.0a24,<0.96.0",
+    "packtivity==0.17.1",
+    "yadage==0.21.2",
+    "yadage-schemas==0.11.1",
+    "reana-commons[yadage]>=0.95.0a26,<0.96.0",
     "requests>=2.25.1",
     "rfc3987==1.3.8",  # FIXME remove once yadage-schemas solves yadage deps.
 ]
